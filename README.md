@@ -15,3 +15,5 @@ vscode 自定义扩展
 > 所有 vim 更好的思路，vscode 都可以完成。
 > 如果没有既有插件，或者既有插件不满意，可以自己编写插件完成。
 
+## 使用 VSpaceCode
+- 在尽可能的干净的 vscode 的环境中`Ctrl+P` 打开命令框 直接安装 `ext install VSpaceCode.vspacecode`，会自动安装依赖的所有插件。
