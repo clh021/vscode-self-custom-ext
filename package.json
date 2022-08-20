@@ -4,13 +4,17 @@
   "description": "lianghong self custom ext for vscode",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.70.0"
+    "vscode": "^1.70.2"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCommand:lianghongCustom.helloWorld"
+    "onCommand:lianghongCustom.helloWorld",
+    "onCommand:lianghongCustom.laozi",
+    "onCommand:lianghongCustom.heroHelp",
+    "onCommand:lianghongCustom.helpBody",
+    "onCommand:lianghongCustom.getTea"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -18,6 +22,22 @@
       {
         "command": "lianghongCustom.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "lianghongCustom.laozi",
+        "title": "laozi random notify"
+      },
+      {
+        "command": "lianghongCustom.heroHelp",
+        "title": "hero random notify"
+      },
+      {
+        "command": "lianghongCustom.helpBody",
+        "title": "help body active"
+      },
+      {
+        "command": "lianghongCustom.getTea",
+        "title": "get a Tea notify"
       }
     ]
   },

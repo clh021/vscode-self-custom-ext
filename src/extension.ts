@@ -1,26 +1,34 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 	
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "lianghongCustom" is now active!');
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('lianghongCustom.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from 良宏自用插件!');
 	});
 
-	context.subscriptions.push(disposable);
+
+	let laozi = vscode.commands.registerCommand('lianghongCustom.laozi', () => {
+		vscode.window.showInformationMessage('laozi from 良宏自用插件!');
+	});
+
+
+	let heroHelp = vscode.commands.registerCommand('lianghongCustom.heroHelp', () => {
+		vscode.window.showInformationMessage('heroHelp from 良宏自用插件!');
+	});
+
+
+	let helpBody = vscode.commands.registerCommand('lianghongCustom.helpBody', () => {
+		vscode.window.showInformationMessage('helpBody from 良宏自用插件!');
+	});
+
+
+	let getTea = vscode.commands.registerCommand('lianghongCustom.getTea', () => {
+		vscode.window.showInformationMessage('getTea from 良宏自用插件!');
+	});
+
+	context.subscriptions.push(disposable, laozi, heroHelp, helpBody, getTea);
 }
 
-// this method is called when your extension is deactivated
 export function deactivate() {}
